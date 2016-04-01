@@ -1,0 +1,5 @@
+name: BridgeAuth
+version: 0.0.1
+api: [1.13.0, 2.0.0]
+author: [Legoboy0215]
+main: EPICMC\BridgeAuth\BridgeAuth
