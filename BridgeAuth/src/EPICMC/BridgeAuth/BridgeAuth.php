@@ -83,8 +83,6 @@ class BridgeAuth extends PluginBase implements Listener{
 		$player->sendMessage('You have been authenticated.');
 	}
 	
-	//https://bridge.epicmc.us/api/login?player=Legoboy0215&ip=220.135.139.166&token=7662
-	
 	/**
      * @priority HIGHEST
      */
