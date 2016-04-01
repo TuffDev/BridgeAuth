@@ -63,7 +63,7 @@ class BridgeAuth extends PluginBase implements Listener{
 					$this->authPlayer($player);
 				}else{
 					$player->sendMessage(self::PREFIX . 'Authentication Failure! Either the token you entered is incorrect, or maybe IP checking is enabled and your IP has changed.');
-					$player->sendMessage('Visit http://bridge.epicmc.us online for more info.');
+					$player->sendMessage('Visit bridge.epicmc.us online for more info.');
 				}
 			}
         }else{
