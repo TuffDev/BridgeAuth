@@ -52,7 +52,7 @@ class BridgeAuth extends PluginBase implements Listener{
 	public function onJoin(PlayerJoinEvent $event){
 		$player = $event->getPlayer();
 		$player->sendMessage(self::PREFIX . 'This server utilizes BridgeAuth to handle authentication.');
-		$player->sendMessage('Enter your bridge token into chat, or visit http://bridge.epicmc.us  online for more info.');
+		$player->sendMessage('Enter your bridge token into chat to play, or visit bridge.epicmc.us online to generate one.');
 	}
 
     public function authComplete($name, $result){
