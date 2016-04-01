@@ -52,7 +52,7 @@ class BridgeAuth extends PluginBase implements Listener{
 	public function onJoin(PlayerJoinEvent $event){
 		$player = $event->getPlayer();
 		$player->sendMessage(TextFormat::GREEN . self::PREFIX . TextFormat::WHITE . 'This server utilizes BridgeAuth to handle authentication.');
-		$player->sendMessage('Enter your bridge token into chat to play, or visit . TextFormat::DARK_BLUE . TextFormat::UNDERLINE . bridge.epicmc.us . TextFormat::RESET . online to generate one.');
+		$player->sendMessage('Enter your bridge token into chat to play, or visit' . TextFormat::DARK_BLUE . TextFormat::UNDERLINE . 'bridge.epicmc.us' . TextFormat::RESET . TextFormat::WHITE .'online to generate one.');
 	}
 
     public function authComplete($name, $result){
@@ -63,7 +63,7 @@ class BridgeAuth extends PluginBase implements Listener{
 					$this->authPlayer($player);
 				}else{
 					$player->sendMessage(TextFormat::GREEN . self::PREFIX . TextFormat::WHITE . 'Authentication Failure! Either the token you entered is incorrect, or maybe IP checking is enabled and your IP has changed.');
-					$player->sendMessage('Visit . TextFormat::DARK_BLUE . bridge.epicmc.us . TextFormat::RESET . online for more info.');
+					$player->sendMessage('Visit' . TextFormat::DARK_BLUE . 'bridge.epicmc.us' . TextFormat::RESET . TextFormat::WHITE . 'online for more info.');
 				}
 			}
         }else{
